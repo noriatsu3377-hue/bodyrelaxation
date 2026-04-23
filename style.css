@@ -418,14 +418,14 @@ img {
     line-height: 1.6;
 }
 .philosophy-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--color-text-light);
     line-height: 2;
     margin-bottom: 30px;
 }
 .philosophy-text strong {
     color: var(--color-navy);
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: block;
     margin: 15px 0;
     font-weight: 700;
@@ -433,9 +433,9 @@ img {
 .philosophy-highlight {
     background-color: var(--color-navy);
     color: var(--color-bg);
-    padding: 25px;
+    padding: 20px 15px;
     border-radius: 8px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 1.8;
     margin-top: 20px;
@@ -443,6 +443,9 @@ img {
 @media (min-width: 768px) {
     .philosophy-lead {
         font-size: 1.8rem;
+    }
+    .philosophy-text {
+        font-size: 1rem;
     }
     .philosophy-text strong {
         font-size: 1.2rem;
@@ -513,7 +516,7 @@ img {
     position: relative;
     padding-left: 20px;
     margin-bottom: 8px;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--color-text);
     font-weight: 500;
 }
@@ -531,9 +534,17 @@ img {
     background-color: var(--color-bg-light);
     padding: 15px;
     border-left: 3px solid var(--color-navy);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--color-text-light);
     border-radius: 0 4px 4px 0;
+}
+@media (min-width: 768px) {
+    .feature-list li {
+        font-size: 0.95rem;
+    }
+    .reason-box p {
+        font-size: 0.95rem;
+    }
 }
 
 .service-value {
@@ -617,23 +628,24 @@ img {
 /* Conclusion Copy */
 .conclusion-box {
     text-align: center;
-    margin: 60px 0;
-    padding: 40px 20px;
+    margin: 50px 0;
+    padding: 30px 15px;
     background-color: var(--color-bg-light);
     border-radius: 8px;
     border: 2px solid var(--color-gold);
 }
 .conclusion-sub {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--color-text-light);
     margin-bottom: 15px;
     font-weight: 500;
 }
 .conclusion-main {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: var(--color-navy);
     font-weight: 700;
     letter-spacing: 0.05em;
+    line-height: 1.4;
 }
 @media (min-width: 768px) {
     .conclusion-box {
