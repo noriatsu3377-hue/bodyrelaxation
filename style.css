@@ -423,12 +423,19 @@ img {
     line-height: 2;
     margin-bottom: 30px;
 }
-.philosophy-text strong {
+.philosophy-factors {
     color: var(--color-navy);
     font-size: 1rem;
-    display: block;
-    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
+    margin: 20px 0;
     font-weight: 700;
+}
+.philosophy-factors .factor {
+    display: inline-block;
+    white-space: nowrap;
 }
 .philosophy-highlight {
     background-color: var(--color-navy);
@@ -447,7 +454,7 @@ img {
     .philosophy-text {
         font-size: 1rem;
     }
-    .philosophy-text strong {
+    .philosophy-factors {
         font-size: 1.2rem;
     }
     .philosophy-highlight {
