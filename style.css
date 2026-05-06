@@ -937,3 +937,235 @@ img {
     font-size: 0.8rem;
     opacity: 0.6;
 }
+
+/* =========================================
+   New Enhancements (Conversion Optimization)
+   ========================================= */
+
+/* Hero Badge */
+.hero-badge {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-bg);
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* CTA Limit Text */
+.cta-limit {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #FF5A5F;
+    margin-bottom: 10px;
+}
+
+/* Update CTA Badge (Floating) */
+.cta-badge {
+    white-space: nowrap;
+}
+
+/* =========================================
+   Reasons Section
+   ========================================= */
+.reason-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+@media (min-width: 768px) {
+    .reason-cards {
+        gap: 40px;
+    }
+}
+.reason-card {
+    background-color: var(--color-bg-light);
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.02);
+}
+@media (min-width: 768px) {
+    .reason-card {
+        flex-direction: row;
+        align-items: center;
+        padding: 40px;
+    }
+}
+.reason-number {
+    font-family: var(--font-en);
+    font-size: 3rem;
+    color: var(--color-gold);
+    opacity: 0.3;
+    line-height: 1;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+@media (min-width: 768px) {
+    .reason-number {
+        font-size: 4rem;
+        margin-bottom: 0;
+        margin-right: 40px;
+        min-width: 80px;
+    }
+}
+.reason-head {
+    font-size: 1.25rem;
+    color: var(--color-navy);
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+.reason-text {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+/* =========================================
+   Voices Section
+   ========================================= */
+.section-note {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+    .section-note {
+        margin-top: -50px;
+        margin-bottom: 50px;
+    }
+}
+.voice-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+@media (min-width: 768px) {
+    .voice-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+.voice-card {
+    background-color: var(--color-bg);
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    border-top: 4px solid var(--color-gold);
+}
+.voice-user {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #EAEAEA;
+}
+.voice-age {
+    font-weight: 700;
+    color: var(--color-navy);
+    font-size: 0.95rem;
+}
+.voice-trouble {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-top: 5px;
+}
+.voice-title {
+    font-size: 1.1rem;
+    color: var(--color-navy);
+    margin-bottom: 15px;
+    line-height: 1.5;
+    font-weight: 700;
+}
+.voice-text {
+    font-size: 0.9rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+/* =========================================
+   Flow Section
+   ========================================= */
+.flow-steps {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .flow-step {
+        flex-direction: row;
+        margin-bottom: 0;
+        padding-bottom: 40px;
+    }
+    .flow-step:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 50px;
+        top: 40px;
+        bottom: 0;
+        width: 1px;
+        background-color: var(--color-gold);
+        opacity: 0.4;
+        border-left: 1px dashed var(--color-gold);
+    }
+}
+.step-num {
+    background-color: var(--color-navy);
+    color: var(--color-bg);
+    font-family: var(--font-en);
+    font-size: 1rem;
+    padding: 8px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
+    z-index: 2;
+}
+@media (min-width: 768px) {
+    .step-num {
+        margin-bottom: 0;
+        margin-right: 40px;
+        align-self: flex-start;
+        flex-shrink: 0;
+        width: 100px;
+        text-align: center;
+        padding: 8px 0;
+    }
+}
+.step-info {
+    background-color: var(--color-bg-light);
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    border: 1px solid #EAEAEA;
+}
+@media (min-width: 768px) {
+    .step-info {
+        padding: 30px;
+    }
+}
+.step-title {
+    font-size: 1.1rem;
+    color: var(--color-navy);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+.step-desc {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
